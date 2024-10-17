@@ -17,7 +17,7 @@ public class CameraStateMachineController : MonoBehaviour
     }
     private void Start()
     {
-        ChangeState(_stopState);        
+        ChangeState(_moveState);        
     }
 
     

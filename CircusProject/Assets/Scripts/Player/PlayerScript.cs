@@ -62,12 +62,12 @@ public class PlayerScript : MonoBehaviour
     
     private Vector3 Walk()
     {
-        //Vector3 ScreenVelocity = Vector3.right * GameManager.Instance.ScreenSpeed * Time.deltaTime;
-        //Vector3 InputVelocity = _walkAction.ReadValue<Vector2>() * ScreenVelocity;
+        Vector3 ScreenVelocity = Vector3.right * GameManager.Instance.ScreenSpeed * Time.deltaTime;
+        Vector3 InputVelocity = _walkAction.ReadValue<Vector2>() * ScreenVelocity;
 
-        //return ScreenVelocity + InputVelocity;
+        return ScreenVelocity + InputVelocity;
 
-        return Vector3.zero;
+        //return Vector3.zero;
     }
 
     private void Jump()
