@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 1001978127}
   - component: {fileID: 1001978126}
   - component: {fileID: 1001978125}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f150119f249a1a142a59982998ebf80b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -740,7 +740,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1c2b2ed1e56fcdd47af24a6e74696594, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -782,6 +782,7 @@ GameObject:
   - component: {fileID: 1385188146}
   - component: {fileID: 1385188148}
   - component: {fileID: 1385188149}
+  - component: {fileID: 1385188150}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -867,6 +868,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ba8b8e7490b294492b6295c92da1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _jumpForce: 7
+  _baseCoyoteTime: 0.2
+  _baseJumpBuffer: 0.2
+  _groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!114 &1385188150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385188145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 5b7303d7b90572b40ad91603eb09d750, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Movement
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1651919565
 GameObject:
   m_ObjectHideFlags: 0
