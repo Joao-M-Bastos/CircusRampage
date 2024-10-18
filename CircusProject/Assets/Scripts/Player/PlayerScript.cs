@@ -21,6 +21,11 @@ public class PlayerScript : MonoBehaviour
     Rigidbody _playerRB;
     #endregion
 
+    #region Delegates
+    public delegate void OnPlayerDie();
+    public static OnPlayerDie onPlayerDie;
+    #endregion
+
     private void Awake()
     {
         _playerRB = GetComponent<Rigidbody>();
